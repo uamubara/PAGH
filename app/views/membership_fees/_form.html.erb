@@ -1,0 +1,22 @@
+<%= form_with(model: membership_fee, local: true) do |form| %>
+  <% if membership_fee.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(membership_fee.errors.count, "error") %> prohibited this membership_fee from being saved:</h2>
+
+      <ul>
+      <% membership_fee.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :membership_fees_status %>
+    <%= form.text_field :membership_fees_status %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
