@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Member:</strong>
+  <%= @family_member.member.first_name %>
+</p>
+
+<p>
+  <strong>Relationship:</strong>
+  <%= @family_member.relationship.relation %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @family_member.title %>
+</p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @family_member.first_name %>
+</p>
+
+<p>
+  <strong>Middle initial:</strong>
+  <%= @family_member.middle_initial %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @family_member.last_name %>
+</p>
+
+<p>
+  <strong>Birthdate:</strong>
+  <%= @family_member.birthdate %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @family_member.age %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @family_member.gender.gender %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @family_member.email %>
+</p>
+
+<p>
+  <strong>Home phone:</strong>
+  <%= @family_member.home_phone %>
+</p>
+
+<p>
+  <strong>Cell phone:</strong>
+  <%= @family_member.cell_phone %>
+</p>
+
+<%= link_to 'Edit', edit_family_member_path(@family_member) %> |
+<%= link_to 'Back', family_members_path %>

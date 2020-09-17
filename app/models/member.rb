@@ -6,4 +6,5 @@ class Member < ApplicationRecord
   belongs_to :membership_fee
   belongs_to :role
   belongs_to :status
+  has_many   :family_members
 end

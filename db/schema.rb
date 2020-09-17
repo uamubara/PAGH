@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_13_092523) do
+ActiveRecord::Schema.define(version: 2020_09_17_031134) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,26 @@ ActiveRecord::Schema.define(version: 2020_09_13_092523) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["state_id"], name: "index_counties_on_state_id"
+  end
+
+  create_table "family_members", force: :cascade do |t|
+    t.bigint "member_id"
+    t.bigint "relationship_id"
+    t.string "title"
+    t.string "first_name"
+    t.string "middle_initial"
+    t.string "last_name"
+    t.date "birthdate"
+    t.integer "age"
+    t.bigint "gender_id"
+    t.string "email"
+    t.string "home_phone"
+    t.string "cell_phone"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["gender_id"], name: "index_family_members_on_gender_id"
+    t.index ["member_id"], name: "index_family_members_on_member_id"
+    t.index ["relationship_id"], name: "index_family_members_on_relationship_id"
   end
 
   create_table "genders", force: :cascade do |t|
@@ -106,6 +126,9 @@ ActiveRecord::Schema.define(version: 2020_09_13_092523) do
   end
 
   add_foreign_key "counties", "states"
+  add_foreign_key "family_members", "genders"
+  add_foreign_key "family_members", "members"
+  add_foreign_key "family_members", "relationships"
   add_foreign_key "members", "counties"
   add_foreign_key "members", "genders"
   add_foreign_key "members", "membership_fees"

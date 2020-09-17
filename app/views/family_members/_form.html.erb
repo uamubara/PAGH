@@ -1,0 +1,77 @@
+<%= form_with(model: family_member, local: true) do |form| %>
+  <% if family_member.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(family_member.errors.count, "error") %> prohibited this family_member from being saved:</h2>
+
+      <ul>
+      <% family_member.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :member_id %>
+    <%= form.collection_select :member_id, Member.order(:member_no), :id, :member_no %>
+  </div>
+
+  <div class="field">
+    <%= form.label :relationship_id %>
+    <%= form.collection_select :relationship_id, Relationship.order(:relation), :id, :relation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :middle_initial %>
+    <%= form.text_field :middle_initial %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :birthdate %>
+    <%= form.date_select :birthdate, start_year: Date.today.year - 120, end_year: Date.today.year %>
+  </div>
+
+  <div class="field">
+    <%= form.label :age %>
+    <%= form.number_field :age %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gender_id %>
+    <%= form.collection_select :gender_id, Gender.order(:gender), :id, :gender %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :home_phone %>
+    <%= form.text_field :home_phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cell_phone %>
+    <%= form.text_field :cell_phone %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

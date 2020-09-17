@@ -37,7 +37,7 @@
 
 <p>
   <strong>Gender:</strong>
-  <%= @member.gender %>
+  <%= @member.gender.gender %>
 </p>
 
 <p>
@@ -52,12 +52,12 @@
 
 <p>
   <strong>County:</strong>
-  <%= @member.county %>
+  <%= @member.county.county %>
 </p>
 
 <p>
   <strong>State:</strong>
-  <%= @member.state %>
+  <%= @member.state.stateCode %>
 </p>
 
 <p>
@@ -87,22 +87,22 @@
 
 <p>
   <strong>Plan:</strong>
-  <%= @member.plan %>
+  <%= @member.plan.Membership_plan %>
 </p>
 
 <p>
   <strong>Membership fee:</strong>
-  <%= @member.membership_fee %>
+  <%= @member.membership_fee.membership_fees_status %>
 </p>
 
 <p>
   <strong>Role:</strong>
-  <%= @member.role %>
+  <%= @member.role.role %>
 </p>
 
 <p>
   <strong>Status:</strong>
-  <%= @member.status %>
+  <%= @member.status.status %>
 </p>
 
 <p>
