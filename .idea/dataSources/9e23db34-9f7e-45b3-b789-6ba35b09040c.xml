@@ -256,10 +256,10 @@ false Antarctica/Davis
 false Antarctica/DumontDUrville
 false Antarctica/Macquarie
 false Antarctica/Mawson
-false Antarctica/McMurdo
+true Antarctica/McMurdo
 false Antarctica/Palmer
 false Antarctica/Rothera
-false Antarctica/South_Pole
+true Antarctica/South_Pole
 false Antarctica/Syowa
 true Antarctica/Troll
 false Antarctica/Vostok
@@ -646,8 +646,8 @@ false NOVT
 false NPT
 false NST
 false NUT
-false NZ
-false NZ-CHAT
+true NZ
+true NZ-CHAT
 true NZDT
 false NZST
 false NZT
@@ -672,10 +672,10 @@ true PST8PDT
 false PWT
 true PYST
 false PYT
-false Pacific/Apia
-false Pacific/Auckland
+true Pacific/Apia
+true Pacific/Auckland
 false Pacific/Bougainville
-false Pacific/Chatham
+true Pacific/Chatham
 false Pacific/Chuuk
 true Pacific/Easter
 false Pacific/Efate
@@ -782,7 +782,7 @@ false Z
 false Zulu
 true posixrules
 </TimeZones>
-      <StartupTime>1600663615</StartupTime>
+      <StartupTime>1600840874</StartupTime>
     </root>
     <database id="2" parent="1" name="bank">
       <ObjectId>57657</ObjectId>
@@ -804,7 +804,7 @@ true posixrules
       <ObjectId>57808</ObjectId>
       <Comment>Pakistan Association of Greater Houston DB</Comment>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>2046</IntrospectionStateNumber>
+      <IntrospectionStateNumber>2059</IntrospectionStateNumber>
       <Current>1</Current>
       <Relations>sequence|table|57825|57827|1
 sequence|table|57836|57838|1
@@ -867,7 +867,7 @@ sequence|table|58093|58095|1
       <Comment>standard public schema</Comment>
       <StateNumber>352</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>2047</IntrospectionStateNumber>
+      <IntrospectionStateNumber>2060</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <access-method id="18" parent="6" name="btree">

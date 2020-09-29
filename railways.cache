@@ -1,0 +1,87 @@
+                   Prefix Verb   URI Pattern                                                                              Controller#Action
+           family_members GET    /family_members(.:format)                                                                family_members#index
+                          POST   /family_members(.:format)                                                                family_members#create
+        new_family_member GET    /family_members/new(.:format)                                                            family_members#new
+       edit_family_member GET    /family_members/:id/edit(.:format)                                                       family_members#edit
+            family_member GET    /family_members/:id(.:format)                                                            family_members#show
+                          PATCH  /family_members/:id(.:format)                                                            family_members#update
+                          PUT    /family_members/:id(.:format)                                                            family_members#update
+                          DELETE /family_members/:id(.:format)                                                            family_members#destroy
+                  members GET    /members(.:format)                                                                       members#index
+                          POST   /members(.:format)                                                                       members#create
+               new_member GET    /members/new(.:format)                                                                   members#new
+              edit_member GET    /members/:id/edit(.:format)                                                              members#edit
+                   member GET    /members/:id(.:format)                                                                   members#show
+                          PATCH  /members/:id(.:format)                                                                   members#update
+                          PUT    /members/:id(.:format)                                                                   members#update
+                          DELETE /members/:id(.:format)                                                                   members#destroy
+                    plans GET    /plans(.:format)                                                                         plans#index
+                          POST   /plans(.:format)                                                                         plans#create
+                 new_plan GET    /plans/new(.:format)                                                                     plans#new
+                edit_plan GET    /plans/:id/edit(.:format)                                                                plans#edit
+                     plan GET    /plans/:id(.:format)                                                                     plans#show
+                          PATCH  /plans/:id(.:format)                                                                     plans#update
+                          PUT    /plans/:id(.:format)                                                                     plans#update
+                          DELETE /plans/:id(.:format)                                                                     plans#destroy
+                 counties GET    /counties(.:format)                                                                      counties#index
+                          POST   /counties(.:format)                                                                      counties#create
+               new_county GET    /counties/new(.:format)                                                                  counties#new
+              edit_county GET    /counties/:id/edit(.:format)                                                             counties#edit
+                   county GET    /counties/:id(.:format)                                                                  counties#show
+                          PATCH  /counties/:id(.:format)                                                                  counties#update
+                          PUT    /counties/:id(.:format)                                                                  counties#update
+                          DELETE /counties/:id(.:format)                                                                  counties#destroy
+            relationships GET    /relationships(.:format)                                                                 relationships#index
+                          POST   /relationships(.:format)                                                                 relationships#create
+         new_relationship GET    /relationships/new(.:format)                                                             relationships#new
+        edit_relationship GET    /relationships/:id/edit(.:format)                                                        relationships#edit
+             relationship GET    /relationships/:id(.:format)                                                             relationships#show
+                          PATCH  /relationships/:id(.:format)                                                             relationships#update
+                          PUT    /relationships/:id(.:format)                                                             relationships#update
+                          DELETE /relationships/:id(.:format)                                                             relationships#destroy
+          membership_fees GET    /membership_fees(.:format)                                                               membership_fees#index
+                          POST   /membership_fees(.:format)                                                               membership_fees#create
+       new_membership_fee GET    /membership_fees/new(.:format)                                                           membership_fees#new
+      edit_membership_fee GET    /membership_fees/:id/edit(.:format)                                                      membership_fees#edit
+           membership_fee GET    /membership_fees/:id(.:format)                                                           membership_fees#show
+                          PATCH  /membership_fees/:id(.:format)                                                           membership_fees#update
+                          PUT    /membership_fees/:id(.:format)                                                           membership_fees#update
+                          DELETE /membership_fees/:id(.:format)                                                           membership_fees#destroy
+                 statuses GET    /statuses(.:format)                                                                      statuses#index
+                          POST   /statuses(.:format)                                                                      statuses#create
+               new_status GET    /statuses/new(.:format)                                                                  statuses#new
+              edit_status GET    /statuses/:id/edit(.:format)                                                             statuses#edit
+                   status GET    /statuses/:id(.:format)                                                                  statuses#show
+                          PATCH  /statuses/:id(.:format)                                                                  statuses#update
+                          PUT    /statuses/:id(.:format)                                                                  statuses#update
+                          DELETE /statuses/:id(.:format)                                                                  statuses#destroy
+                    roles GET    /roles(.:format)                                                                         roles#index
+                          POST   /roles(.:format)                                                                         roles#create
+                 new_role GET    /roles/new(.:format)                                                                     roles#new
+                edit_role GET    /roles/:id/edit(.:format)                                                                roles#edit
+                     role GET    /roles/:id(.:format)                                                                     roles#show
+                          PATCH  /roles/:id(.:format)                                                                     roles#update
+                          PUT    /roles/:id(.:format)                                                                     roles#update
+                          DELETE /roles/:id(.:format)                                                                     roles#destroy
+                  genders GET    /genders(.:format)                                                                       genders#index
+                          POST   /genders(.:format)                                                                       genders#create
+               new_gender GET    /genders/new(.:format)                                                                   genders#new
+              edit_gender GET    /genders/:id/edit(.:format)                                                              genders#edit
+                   gender GET    /genders/:id(.:format)                                                                   genders#show
+                          PATCH  /genders/:id(.:format)                                                                   genders#update
+                          PUT    /genders/:id(.:format)                                                                   genders#update
+                          DELETE /genders/:id(.:format)                                                                   genders#destroy
+                   states GET    /states(.:format)                                                                        states#index
+                          POST   /states(.:format)                                                                        states#create
+                new_state GET    /states/new(.:format)                                                                    states#new
+               edit_state GET    /states/:id/edit(.:format)                                                               states#edit
+                    state GET    /states/:id(.:format)                                                                    states#show
+                          PATCH  /states/:id(.:format)                                                                    states#update
+                          PUT    /states/:id(.:format)                                                                    states#update
+                          DELETE /states/:id(.:format)                                                                    states#destroy
+                     root GET    /                                                                                        pages#home
+       rails_service_blob GET    /rails/active_storage/blobs/:signed_id/*filename(.:format)                               active_storage/blobs#show
+rails_blob_representation GET    /rails/active_storage/representations/:signed_blob_id/:variation_key/*filename(.:format) active_storage/representations#show
+       rails_disk_service GET    /rails/active_storage/disk/:encoded_key/*filename(.:format)                              active_storage/disk#show
+update_rails_disk_service PUT    /rails/active_storage/disk/:encoded_token(.:format)                                      active_storage/disk#update
+     rails_direct_uploads POST   /rails/active_storage/direct_uploads(.:format)                                           active_storage/direct_uploads#create

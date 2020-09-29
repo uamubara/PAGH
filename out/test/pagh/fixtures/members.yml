@@ -1,0 +1,53 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  member_no: 1
+  title: MyString
+  first_name: MyString
+  middle_initial: MyString
+  last_name_string: MyString
+  birthdate: 2020-09-13
+  age: 1
+  gender: one
+  street_address: MyString
+  city: MyString
+  county: one
+  state: one
+  postal_code: MyString
+  email: MyString
+  home_phone: MyString
+  cell_phone: MyString
+  send_card: false
+  plan: one
+  membership_fee: one
+  role: one
+  status: one
+  member_since: 2020-09-13
+  membership_ends: 2020-09-13
+  notes: MyText
+
+two:
+  member_no: 1
+  title: MyString
+  first_name: MyString
+  middle_initial: MyString
+  last_name_string: MyString
+  birthdate: 2020-09-13
+  age: 1
+  gender: two
+  street_address: MyString
+  city: MyString
+  county: two
+  state: two
+  postal_code: MyString
+  email: MyString
+  home_phone: MyString
+  cell_phone: MyString
+  send_card: false
+  plan: two
+  membership_fee: two
+  role: two
+  status: two
+  member_since: 2020-09-13
+  membership_ends: 2020-09-13
+  notes: MyText

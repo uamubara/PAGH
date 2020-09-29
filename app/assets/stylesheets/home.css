@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ body{
+     text-align: center;
+ }
+ .wrapper1{
+     width: 1170px;
+     margin: 0 auto;
+ }
+header{
+    height: 100px;
+    background: #262626;
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+}
+
+.logo{
+    width: 50%;
+    float: left;
+    line-height: 100px;
+}
+
+
+.logo a{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: bignoodletitling, serif;
+    color: white;
+    letter-spacing: 4px;
+
+}
+
+nav{
+    float: left;
+    line-height: 100px;
+}
+nav a{
+    float: left;
+    text-decoration: none;
+    font-family: bignoodletitling;
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin: 0 10px;
+    padding-left: 400px;
+    color: white;
+}
+
+.banner-area{
+    width: 100%;
+    height: 500px;
+    position: fixed;
+    top: 100px;
+    background-image: url("cover-image-78-1024x444.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+.content-area{
+    width: 100%;
+    position: relative;
+    top: 450px;
+    background-image: linear-gradient(to right bottom, #023d0a, #005a0f, #007913, #009914, #00bb14, #02cc1a, #03dd21, #03ef27, #03f334, #04f73f, #05fb4a, #07ff53);
+    height: 1500px;
+}
+
+.body2{
+    background: #A1FFCE;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    color: #000000;
+    font-weight: 300;
+    font-size: 1.5em;
+    font-family: Sans-Serif, serif;
+    margin: 0;
+    padding: 0 25px 40px;
+}
+
+
+a{
+    color: #b5a4fb;
+    text-decoration: none;
+}
+
+a:hover , a:focus{
+    color: #DADADA;
+}
+
+*, *:after, *:before{-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+a,button{
+    outline: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.wrap {
+    width: 830px;
+    height: auto;
+    margin: 70px 0;
+    float: left;
+}
+
+.fa {
+    color: #ffffff;
+}
+
+div[class^="btn"] {
+    float: left;
+    margin: 0 10px 10px 0;
+    height: 95px;
+    position: relative;
+    cursor: pointer;
+    transition: all .4s ease;
+    -webkit-user-drag: element;
+    border:solid 2px transparent;
+    text-align: center;
+    line-height: 100px;
+}
+div[class^="btn"]:hover {
+    opacity: 0.7;
+}
+
+div[class^="btn"]:active {
+    transform: scale(.98, .98);
+
+}
+.btn-big{width: 200px;}
+.btn-small{width: 95px;}
+.last{margin-right: 0 !important;}
+.start {
+    color: white;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    font-size: 50px;
+    font-family: "yanone kaffeesatz", Sans-Serif, serif;
+    margin-bottom: 20px;
+    cursor: pointer;
+    user-select: none;
+    transition: all .3s ease;
+}
+
+.start:hover {
+    text-shadow: 0 0 6px white;
+    letter-spacing: 4px;
+
+}
+
+.space {
+    margin-bottom: 110px;
+}
+
+.label{
+    position: absolute;
+    color: white;
+    font: 500 12px Sans-Serif;
+    left: 10px;
+    user-select: none;
+}
+
+.bottom{bottom: 5px;}
+.top{ top: 5px;}
+
+.Red{background: #cc0000}
+.Blue{background: dodgerblue}
+.Orange{background: orange}
+.Green{background: darkgreen}
+.Purp{background: purple}
+
+.Grey{
+    background: #666666;
+    animation: flip 6s linear infinite;
+    transform: rotateX(0deg);
+}
+.Photo {
+    background: url("Minar-e-Pakistan-HD-Wallpapers.jpg");
+    background-size: cover;
+}
+
+.Green-bright-last{background: limegreen}
+.Red-light{background: red}
+.Redish{background: indianred}
+.Blue-nav{background: darkblue}
+.Yellow{background: greenyellow}
+
+div[class^="icon"]{
+    width: 45px;
+    height: 45px;
+    margin: 20px auto;
+    background-size: 45px 45px;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+
+}
+
+::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px 2px rgba(0,0,0,0.3);
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background: lightgray;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+::selection{
+    background: mintcream;
+}
+
+@keyframes flip {
+    0% {
+        transform: rotateX(0deg);
+    }
+    15%{
+        transform: rotateX(360deg);
+    }
+    100% {
+        transform: rotateX(360deg);
+    }
+}
+.Photo img {
+    top: -4px;
+    left: -4px;
+    position: absolute;
+    opacity: 0;
+    animation: fade 8s ease-in-out infinite 8s;
+    z-index: inherit;
+}
+
+.Photo img:hover{
+    border: solid 2px mintcream;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 0;
+    }
+
+}
+
