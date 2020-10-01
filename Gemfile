@@ -72,3 +72,8 @@ gem "compass", "~> 1.0"
 gem "compass-rails"
 gem "font-awesome-rails"
 gem "scenic"
+gem 'ransack'
+gem 'prawn'
+gem 'activeadmin'
+gem 'devise'
+gem 'activeadmin_blaze_theme'

@@ -76,3 +76,7 @@ excel_file.sheet(0)
   state_id = excel_file.cell(line, 'M')
   County.create!(county: county, state_id: state_id)
 end
+
+
+
+AdminUser.create!(email: 'MianNazir@pagh.com', password: 'Pakistan', password_confirmation: 'Pakistan') if Rails.env.development?

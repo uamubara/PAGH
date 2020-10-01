@@ -6,5 +6,15 @@ class Member < ApplicationRecord
   belongs_to :membership_fee
   belongs_to :role
   belongs_to :status
-  has_many   :family_members
+  has_many   :family_member
+
+  def display_name
+    title
+    first_name
+    middle_initial
+    last_name_string
+
+  end
 end
+
+
