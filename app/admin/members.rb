@@ -1,5 +1,14 @@
 ActiveAdmin.register Member do
-
+  scope :active_members
+  scope :inactive_expired_membership
+  scope :send_card
+  scope :do_not_send_card
+  scope :paid
+  scope :payment_required
+  scope :voter_list
+  scope :lifetime_members
+  scope :three_year_members
+  scope :yearly_members
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
