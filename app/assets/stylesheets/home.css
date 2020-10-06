@@ -139,6 +139,8 @@ div[class^="btn"]:active {
     transform: scale(.98, .98);
 
 }
+
+.btn-weather{width: 320px;}
 .btn-big{width: 200px;}
 .btn-small{width: 95px;}
 .last{margin-right: 0 !important;}
@@ -177,8 +179,9 @@ div[class^="btn"]:active {
 .top{ top: 5px;}
 
 .Red{background: #cc0000}
-.Blue{background: dodgerblue}
-.Orange{background: orange}
+.Blue{background: url("twitter.png") center no-repeat dodgerblue}
+.Blue2{background:  dodgerblue}
+.Orange{background: url("search.png") center no-repeat orange}
 .Green{background: darkgreen}
 .Purp{background: purple}
 
@@ -192,11 +195,11 @@ div[class^="btn"]:active {
     background-size: cover;
 }
 
-.Green-bright-last{background: limegreen}
-.Red-light{background: red}
-.Redish{background: indianred}
-.Blue-nav{background: darkblue}
-.Yellow{background: greenyellow}
+.Green-bright-last{background: url("pagh-logo_2_85x85.png") center no-repeat limegreen;}
+.Red-light{background: url("instagram.png") center no-repeat red}
+.Redish{background: url("map_of_houston.png__800x600_q75_subsampling-2_85x85.png") center no-repeat indianred}
+.Blue-nav{background: url("facebook.png") center no-repeat darkblue}
+.Yellow{background: url("login.png") center no-repeat yellow;}
 
 div[class^="icon"]{
     width: 45px;
@@ -266,3 +269,8 @@ div[class^="icon"]{
 
 }
 
+.time-wrapper{
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+}
