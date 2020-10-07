@@ -183,10 +183,10 @@ div[class^="btn"]:active {
 .Blue2{background:  dodgerblue}
 .Orange{background: url("search.png") center no-repeat orange}
 .Green{background: darkgreen}
-.Purp{background: purple}
+.Purp{background: url("sign-form.png") center no-repeat purple}
 
 .Grey{
-    background: #666666;
+    background: url("youtube.png") center no-repeat #666666;
     animation: flip 6s linear infinite;
     transform: rotateX(0deg);
 }
@@ -274,3 +274,4 @@ div[class^="icon"]{
     width: 100%;
     padding: 10px;
 }
+
